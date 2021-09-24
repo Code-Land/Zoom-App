@@ -1,0 +1,164 @@
+body {
+  background-color: #e3e3e3;
+}
+
+/* HOME PAGE */
+.mainHomePage {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.aboutApp {
+  font-size: 20px;
+  color: #1f1f1f;
+}
+
+hr {
+  height: 1px;
+  background-color: #1f1f1f;
+}
+
+.contactIcons {
+  font-size: 2rem;
+}
+
+/* MEETING PAGE */
+
+.meetGroupTitle {
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.screen {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: cursive;
+}
+
+.screemVideo {
+  position: relative;
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+}
+
+.screenChat {
+  flex: 0.2;
+}
+
+.Videos {
+  flex-grow: 1;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.allControllers {
+  background-color: #eee;
+}
+
+.screenChat {
+  background-color: #d5ffae;
+  border-left: 3px solid #d5ffae;
+}
+
+.allControllers {
+  color: #29372a;
+  display: flex;
+  justify-content: space-around;
+  padding: 4px;
+}
+
+.actionControllers {
+  display: flex;
+}
+
+.controllerBTN {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 10px;
+  min-width: 80px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.controllerBTN:hover {
+  background-color: #fefefe;
+  color: #323232;
+  border-radius: 5px;
+}
+
+.controllerBTN i {
+  font-size: 24px;
+}
+
+.screenChat {
+  display: flex;
+  flex-direction: column;
+}
+
+.unmute,
+.stop {
+  color: #dc3545;
+}
+
+.chatHeader {
+  padding-top: 5px;
+  color: #1f1f1f;
+  text-align: center;
+}
+
+.allChats {
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+.messages {
+  color: #1f1f1f;
+  list-style: none;
+}
+
+.sendNewMessage {
+  padding: 22px 12px;
+}
+
+.sendNewMessage input {
+  background-color: transparent;
+  padding: 10px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  color: #1f1f1f;
+}
+
+/* LITTLE RESPONSIVE */
+@media (max-width: 760px) {
+  .main {
+    flex-direction: column;
+  }
+  .screemVideo {
+    flex: 2;
+  }
+
+  .screenChat {
+    flex: 1;
+  }
+
+  .mainHomePage:first-child {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .sendNewMessage input {
+    display: block !important;
+    width: 100% !important;
+  }
+}
